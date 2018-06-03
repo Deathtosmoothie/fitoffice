@@ -287,6 +287,8 @@ input[type="text"]:focus, input[type="email"]:focus, input[type="password"]:focu
     }
     #nav.nav-transparent .navbar-brand .logo {
         display: block !important;
+        width: 40px;
+        margin-left: 5px;
     }
 }
 
@@ -1422,7 +1424,7 @@ header {
 
 .contact i {
     font-size: 36px;
-    color: #6195FF;
+    color: #b8b8b8;
     margin-bottom: 20px;
 }
 
