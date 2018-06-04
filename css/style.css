@@ -118,6 +118,10 @@ ul, ol {
     list-style: none
 }
 
+.center-txt {
+    text-align: center;
+}
+
 /* -- section  -- */
 
 .section {
@@ -168,8 +172,8 @@ ul, ol {
     top: 0;
     right: 0;
     bottom: 0;
-    opacity: .4;
-    background: #1C1D21;
+    opacity: .6;
+    background: #254728;
 }
 
 
