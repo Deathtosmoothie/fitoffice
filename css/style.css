@@ -278,7 +278,12 @@ input[type="text"]:focus, input[type="email"]:focus, input[type="password"]:focu
     padding: 0;
 }
 
-.navbar-brand .logo, .navbar-brand .logo-alt {
+.navbar-brand .logo {
+    max-height: 58px;
+    display: block;
+}
+
+.navbar-brand .logo-alt {
     max-height: 100px;
     display: block;
 }
@@ -447,6 +452,9 @@ input[type="text"]:focus, input[type="email"]:focus, input[type="password"]:focu
     }
     #nav.nav-transparent {
         background: #FFF;
+    }
+    #nav.fixed-nav {
+        padding:0px 0px;
     }
     .main-nav {
         position: fixed;
