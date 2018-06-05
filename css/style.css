@@ -44,16 +44,21 @@ Table OF Contents
 
 /* -- typography -- */
 
+@font-face{
+    font-family: "Cuprum";
+    src: url("../fonts/Cuprum.ttf")
+}
+
 body {
-    font-family: 'Varela Round', sans-serif;
-    font-size: 16px;
+    font-family: "Cuprum";
+    font-size: 18px;
     line-height: 1.6;
     overflow-x: hidden;
     color: #868F9B;
 }
 
 h1, h2, h3, h4, h5, h6 {
-    font-family: 'Montserrat', sans-serif;
+    font-family: 'Montserrat';
     font-weight: 700;
     margin-top: 0px;
     margin-bottom: 20px;
