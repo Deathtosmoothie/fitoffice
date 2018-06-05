@@ -49,9 +49,14 @@ Table OF Contents
     src: url("../fonts/Cuprum.ttf")
 }
 
+@font-face{
+    font-family: "Montserrat";
+    src: url("../fonts/Montserrat.ttf")
+}
+
 body {
     font-family: "Cuprum";
-    font-size: 18px;
+    font-size: 20px;
     line-height: 1.6;
     overflow-x: hidden;
     color: #868F9B;
@@ -324,7 +329,7 @@ input[type="text"]:focus, input[type="email"]:focus, input[type="password"]:focu
     position: fixed;
     left: 0;
     right: 0;
-    padding: 0px 0px;
+    padding: 20px 0px;
     background-color: #FFF !important;
     border-bottom: 1px solid #EEE;
 }
@@ -341,7 +346,7 @@ input[type="text"]:focus, input[type="email"]:focus, input[type="password"]:focu
         padding: 0px 15px;
     }
     .main-nav li a {
-        font-size: 14px;
+        font-size: 16px;
         -webkit-transition: 0.2s color;
         transition: 0.2s color;
     }
