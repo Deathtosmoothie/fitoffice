@@ -132,6 +132,7 @@ ul, ol {
     text-align: center;
 }
 
+
 /* -- section  -- */
 
 .section {
@@ -1446,7 +1447,7 @@ header {
 
 .contact i {
     font-size: 36px;
-    color: #b8b8b8;
+    color: #6195FF;
     margin-bottom: 20px;
 }
 
@@ -1482,7 +1483,7 @@ header {
 }
 
 .footer-logo>a>img {
-    max-height: 80px;
+    max-height: 100px;
 }
 
 .footer-follow {
