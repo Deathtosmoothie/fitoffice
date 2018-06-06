@@ -1493,8 +1493,7 @@ header {
 
 .footer-follow li {
     display: inline-block;
-    margin-right: 10px;
-    margin-bottom: 13px;
+   margin: 0px 13px;
 }
 
 .footer-follow li a {
