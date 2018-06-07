@@ -864,6 +864,12 @@ header {
 .feature {
     margin: 15px 0px;
 }
+.features_subh {
+    font-size: 30px;
+}
+.features_h {
+    margin-bottom: 0px;
+}
 .feature i {
     float: left;
     padding: 5px;
@@ -1447,7 +1453,7 @@ header {
 \*------------------------------------*/
 
 #contact {
-    display: none;
+/*    display: none;*/
 }
 
 .contact {
