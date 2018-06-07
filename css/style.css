@@ -811,7 +811,7 @@ header {
 
 .service {
     position: relative;
-    padding: 40px 20px 40px 70px;
+    padding: 40px 60px 40px 60px;
     margin: 15px 0px;
     border: 1px solid #EEE;
 }
@@ -849,6 +849,12 @@ header {
 
 .service:hover h3 {
     color: #fff;
+}
+
+@media screen and (min-width: 1199px) {
+    .service {
+        height: 260px;
+    }
 }
 
 /*------------------------------------*\
@@ -1440,6 +1446,10 @@ header {
 	Contact
 \*------------------------------------*/
 
+#contact {
+    display: none;
+}
+
 .contact {
     margin: 15px 0px;
     text-align: center;
@@ -1475,6 +1485,7 @@ header {
 
 #footer {
     position: relative;
+    padding: 20px;
 }
 
 .footer-logo {

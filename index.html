@@ -67,14 +67,9 @@
 				<ul class="main-nav nav navbar-nav navbar-right">
 					<li><a href="#home">Главная</a></li>
 					<li><a href="#about">О нас</a></li>
-					<li><a href="#service">Наши цели</a></li>
-					<li><a href="#pricing">Prices</a></li>
-					<li><a href="#team">Team</a></li>
-					<li class="has-dropdown"><a href="#blog">Blog</a>
-						<ul class="dropdown">
-							<li><a href="blog-single.html">blog post</a></li>
-						</ul>
-					</li>
+					<li><a href="#service">Плюсы</a></li>
+					<li><a href="#feature">Инвентарь</a></li>
+					<li><a href="#team">Наша команда</a></li>
 					<li><a href="#contact">Контакты</a></li>
 				</ul>
 				<!-- /Main navigation -->
@@ -162,7 +157,7 @@
 					<div class="service">
 						<i class="fa fa-clock-o"></i>
 						<h3>Экономия времени</h3>
-						<p>Ваши сотрудники экономят время и могут уделить больше личным делам, что делает их счастливее.</p>
+						<p>Ваши сотрудники экономят время и могут уделять большее внимание личным делам, что делает их счастливее.</p>
 					</div>
 				</div>
 				<!-- /service -->
@@ -181,8 +176,8 @@
 				<div class="col-md-4 col-sm-6">
 					<div class="service">
 						<i class="fa fa-coffee"></i>
-						<h3>Утренние тренировки</h3>
-						<p>Занятия утром позволяют сотрудникам приходить вовремя и не опаздывать на работу.</p>
+						<h3>Занятия утром</h3>
+						<p>Утренние тренировки позволяют сотрудникам приходить вовремя и не опаздывать на работу.</p>
 					</div>
 				</div>
 				<!-- /service -->
@@ -190,8 +185,8 @@
 			</div>
             
             <div class="row">
-				<!-- service -->
-				<div class="col-md-4 col-sm-6 col-md-offset-1">
+                <div class="col-md-2"></div>
+				<div class="col-md-4 col-sm-6">
 					<div class="service">
 						<i class="fa fa-bolt"></i>
 						<h3>Тонус</h3>
@@ -201,13 +196,15 @@
 				<!-- /service -->
 
 				<!-- service -->
-				<div class="col-md-4 col-sm-6 col-md-offset-1">
+				<div class="col-md-4 col-sm-6">
 					<div class="service">
 						<i class="fa fa-thumbs-o-up"></i>
 						<h3>Статус</h3>
 						<p>Наши тренировки являются отличным социальным пакетом и повышают статус компании.</p>
 					</div>
 				</div>
+                <div class="col-md-2"></div>
+
 				<!-- /service -->
             </div>
 
@@ -266,13 +263,13 @@
 
 				<!-- contact form -->
 				<div class="col-md-8 col-md-offset-2">
-					<form class="contact-form">
-						<input type="text" class="input" placeholder="Имя">
-						<input type="email" class="input" placeholder="Email">
-						<input type="text" class="input" placeholder="Тема">
-						<textarea class="input" placeholder="Сообщение"></textarea>
-						<button class="main-btn">Отправить</button>
-					</form>
+                    <form id="form" action="send.php" class="contact-form" method="post">
+                       <input name="name" type="text" class="input" placeholder="Имя">
+                       <input name='email' type="email" class="input" placeholder="Email">
+                       <input name="theme" type="text" class="input" placeholder="Тема">
+                       <textarea name="message" class="input" type="text" placeholder="Сообщение"></textarea>
+                       <button class="main-btn" type="submit">Отправить</button>
+                    </form>
 				</div>
 				<!-- /contact form -->
 
@@ -312,7 +309,7 @@
 
 					<!-- footer copyright -->
 					<div class="footer-copyright">
-						<p>Developed by <a href="https://salakhutdinov.esy.es" target="_blank">Salakhutdinov</a></p>
+<!--						<p>Developed by <a href="https://salakhutdinov.esy.es" target="_blank">R.Salakhutdinov</a></p>-->
 					</div>
 					<!-- /footer copyright -->
 
