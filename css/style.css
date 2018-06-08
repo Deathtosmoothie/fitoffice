@@ -183,8 +183,8 @@ ul, ol {
     top: 0;
     right: 0;
     bottom: 0;
-    opacity: .6;
-    background: #254728;
+    opacity: .7;
+    background: #29374f;
 }
 
 
@@ -814,6 +814,7 @@ header {
     padding: 40px 60px 40px 60px;
     margin: 15px 0px;
     border: 1px solid #EEE;
+   
 }
 
 .service i {
@@ -856,11 +857,18 @@ header {
         height: 260px;
     }
 }
+@media screen and (max-width: 1198px) and (min-width: 767px) {
+    .service {
+        height: 320px;
+    }
+}
 
 /*------------------------------------*\
 	Why choose us
 \*------------------------------------*/
-
+#features {
+    display: none;
+}
 .feature {
     margin: 15px 0px;
 }
@@ -1033,7 +1041,9 @@ header {
 /*------------------------------------*\
 	Team
 \*------------------------------------*/
-
+#team {
+    display: none;
+}
 .team {
     position: relative;
     background-color: #F4F4F4;
@@ -1453,7 +1463,7 @@ header {
 \*------------------------------------*/
 
 #contact {
-/*    display: none;*/
+    display: none;
 }
 
 .contact {
