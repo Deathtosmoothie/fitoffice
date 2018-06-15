@@ -165,6 +165,7 @@ ul, ol {
 
 /* --  background image section  -- */
 
+/*
 .bg-img {
     position: absolute;
     left: 0;
@@ -176,7 +177,22 @@ ul, ol {
     background-size: cover;
     background-attachment: fixed;
 }
-
+*/
+.bg-img:before {
+  content: "";
+  display: block;
+  position: fixed;
+  left: 0;
+  top: 0;
+  width: 100%;
+  height: 100%;
+  z-index: -10;
+  background: url('../img/background1.jpg') no-repeat center center;
+  -webkit-background-size: cover;
+  -moz-background-size: cover;
+  -o-background-size: cover;
+  background-size: cover;
+}
 .bg-img .overlay {
     position: absolute;
     left: 0;
@@ -619,7 +635,7 @@ header {
 }
 
 .home-content h1 {
-  text-transform: uppercase;
+  text-transform: uppercase; 
 }
 .home-content button {
   margin-top: 20px;
@@ -811,18 +827,21 @@ header {
 
 .service {
     position: relative;
-    padding: 40px 60px 40px 60px;
+    padding: 40px 40px;
     margin: 15px 0px;
     border: 1px solid #EEE;
    
 }
-
+.service p {
+    text-align:justify;
+   margin-top: 20px;
+}
 .service i {
     position: absolute;
-    left: 20px;
+    left: 9%;
     text-align: center;
     font-size: 32px;
-    color: #6195FF;
+    color: #d8ebf9;
     border-radius: 50%;
 }
 
@@ -846,6 +865,10 @@ header {
 .service h3 {
   -webkit-transition: 0.2s color;
   transition: 0.2s color;
+    text-align: center;
+    width: 170px;
+    margin: auto;
+    line-height: 30px;
 }
 
 .service:hover h3 {
@@ -856,10 +879,19 @@ header {
     .service {
         height: 260px;
     }
+
 }
 @media screen and (max-width: 1198px) and (min-width: 767px) {
     .service {
-        height: 320px;
+        height: 280px;
+    }
+    .service i {
+        left: 2%;
+    }
+}
+@media screen and (max-width: 766px) {
+     .service p {
+        margin-top: 10px;
     }
 }
 
@@ -1463,7 +1495,7 @@ header {
 \*------------------------------------*/
 
 #contact {
-    display: none;
+/*    display: none;*/
 }
 
 .contact {
