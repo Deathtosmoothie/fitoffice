@@ -5,12 +5,13 @@ if((isset($_POST['name'])&&$_POST['name']!="")&&(isset($_POST['tel'])&&$_POST['t
         $from = $_POST['email'];
         $message = ''.$subject.'
                 Имя: '.$_POST['name'].'
-                      Телефон: '.$_POST['theme'].'                   
+                      Телефон: '.$_POST['tel'].'                   
                         email: '.$_POST['email'].''; //Текст нащего сообщения можно использовать HTML теги
         $headers  = "Content-type: text/html; charset=utf-8 \r\n"; //Кодировка письма
         $headers = 'From:' .$from.''; //Наименование и почта отправителя
         mail($to, $subject, $message, $headers); //Отправка письма с помощью функции mail
-        echo $message;
+//        echo $message;
+        header("Location: http://www.fit-office.net");
 }
 ?>
 

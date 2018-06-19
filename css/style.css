@@ -381,9 +381,13 @@ input[type="text"]:focus, input[type="email"]:focus, input[type="password"]:focu
     #nav.nav-transparent:not(.fixed-nav) .main-nav>li>a {
         color: #fff;
     }
-    .main-nav>li>a:hover, .main-nav>li>a:focus, .main-nav>li.active>a {
+    .main-nav>li>a:hover, .main-nav>li.active>a {
         background: transparent;
         color: #6195FF;
+    }
+    .main-nav>li>a:focus {
+        background: transparent;
+        opacity: 1;
     }
     .main-nav>li>a:after {
         content: "";
@@ -629,7 +633,7 @@ header {
     position: absolute;
     left: 0px;
     right: 0px;
-    top: 50%;
+    top: 44%;
     -webkit-transform: translateY(-50%);
     -ms-transform: translateY(-50%);
     transform: translateY(-50%);
@@ -661,7 +665,12 @@ header {
 .breadcrumb>li+li:before {
     color: #868F9B;
 }
-
+@media screen and (max-width:767px) {
+    #home .home-wrapper {
+        top: 64%;
+        z-index: 2;
+    }
+}
 
 /*------------------------------------*\
 	About
@@ -707,7 +716,11 @@ header {
     color: #fff;
 }
 
-
+@media screen and (min-width:1600px) {
+    #about {
+        padding-top: 200px;
+    }
+}
 /*------------------------------------*\
 	Portfolio
 \*------------------------------------*/
@@ -840,7 +853,6 @@ header {
 }
 .service i {
     position: absolute;
-    left: 9%;
     text-align: center;
     font-size: 32px;
     color: #d8ebf9;
@@ -887,9 +899,7 @@ header {
     .service {
         height: 280px;
     }
-    .service i {
-        left: 2%;
-    }
+    
 }
 @media screen and (max-width: 766px) {
      .service p {
@@ -1496,18 +1506,16 @@ header {
 	Contact
 \*------------------------------------*/
 
-#contact {
-/*    display: none;*/
-}
-
 .contact {
     margin: 15px 0px;
     text-align: center;
 }
-
+.contact_h{
+    text-transform: uppercase;
+}
 .contact i {
     font-size: 36px;
-    color: #6195FF;
+    color: #d8ebf9;
     margin-bottom: 20px;
 }
 
@@ -1527,6 +1535,11 @@ header {
 
 .contact-form .input:nth-child(2) {
     margin-left: 15px;
+}
+@media screen and (min-width:768px) and (max-width: 991px) {
+    .contact {
+        height: 200px;
+    }
 }
 
 /*------------------------------------*\
