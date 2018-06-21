@@ -10,9 +10,9 @@ if((isset($_POST['name'])&&$_POST['name']!="")&&(isset($_POST['tel']))&&(isset($
         $headers  = "Content-type: text/html; charset=utf-8 \r\n"; //Кодировка письма
         $headers = 'From:' .$from.''; //Наименование и почта отправителя
         mail($to, $subject, $message, $headers); //Отправка письма с помощью функции mail
-                                                         
+                   
 
-        echo "<script>alert('Заявка принята, с вами скоро свяжутся');
+        echo "<script>alert('Уважаемый клиент! Ваша заявка принята, наши специалисты свяжутся с Вами в ближайшее время.');
             document.location.href='/index.html';</script>";
             
         header("Location: http://www.fit-office.net");
